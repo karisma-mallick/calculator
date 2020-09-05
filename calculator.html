@@ -1,0 +1,78 @@
+<html>
+<head>
+<br><br><br><h1><center>calculator</center></h1><br><br>
+
+<style>
+
+
+</style>
+</head>
+
+
+<body style="border-style:solid; background-color:gray;">
+
+
+<center>
+<div  style="border-style:solid; margin-left:500px;margin-right:500px; background-color:green;">
+<label>
+input1
+</label>
+<input type="number" id="txt1"/><br><br><br>
+<label>
+input2
+</label>
+<input type="number" id="txt2"/><br><br><br>
+<label>
+result
+</label>
+<input type="textbox" disabled=true id="txtResult"/><br><br><br>
+<input type="button" value="add" onclick="add()"/>
+
+
+<input type="button" value="substraction" onclick="substraction()"/>
+<input type="button" value="multiplication" onclick="multiplication()"/>
+<input type="button" value="division" onclick="division()"/> 
+</div>
+</center>
+</body>
+<script>
+
+function add()
+{
+var a=document.getElementById("txt1").value;
+var b=document.getElementById("txt2").value;
+var c=Number(a)+ Number(b);
+document.getElementById("txtResult").value=c;
+alert(c);
+}
+function substraction()
+{
+var a=document.getElementById("txt1").value;
+var b=document.getElementById("txt2").value;
+var c=Number(a)- Number(b);
+document.getElementById("txtResult").value=c;
+alert(c);
+}
+function multiplication()
+{
+var a=document.getElementById("txt1").value;
+var b=document.getElementById("txt2").value;
+var c=Number(a)* Number(b);
+document.getElementById("txtResult").value=c;
+alert(c);
+}
+function division()
+{
+var a=document.getElementById("txt1").value;
+var b=document.getElementById("txt2").value;
+var c=Number(a)/ Number(b);
+document.getElementById("txtResult").value=c;
+alert(c);
+}
+
+
+
+
+
+</script>
+</html>
